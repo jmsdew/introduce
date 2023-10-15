@@ -68,10 +68,10 @@ header nav ul li button{
   text-align: center;
 }
 .myself h4{
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .myself h2{
-  font-size: 7rem;
+  font-size: 5rem;
   margin: 2rem;
   letter-spacing: 3px;
 }
@@ -141,8 +141,8 @@ header nav ul li button{
   background-size: cover;
   border-radius: 50%;
   display: flex;
-  height: 40vh;
-  width: 30vh;
+  height: 35vh;
+  width: 25vh;
 }
 .prof{
   display: flex;
@@ -321,7 +321,7 @@ header nav ul li button{
 .spec-story{
   margin: 3%;
   width: 80vw;
-  height: 80vh;
+  height: 50vh;
 }
 .spec-story h3{
   font-size: 2rem;
