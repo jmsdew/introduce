@@ -141,8 +141,8 @@ header nav ul li button{
   background-size: cover;
   border-radius: 50%;
   display: flex;
-  height: 360px;
-  width: 280px;
+  height: 40vh;
+  width: 30vh;
 }
 .prof{
   display: flex;
@@ -180,13 +180,13 @@ header nav ul li button{
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  width: 980px;
+  width: 80vw
 }
 .skill-name{
   align-items: center;
   color: white;
   display: flex;
-  font-size: 20px;
+  font-size: 2vw;
   font-weight: 600;
   justify-content: center;
   width: 120px;
@@ -280,12 +280,13 @@ header nav ul li button{
   text-align: center;
   border: 1px solid black;
   border-radius: 10%;
+
 }
 .spec{
   margin: 5%;
   text-align: center;
-  height: 50rem;
-  display: flex;
+  height: 150vh;
+  display: block;
 }
 .project h2{
   font-size: 2.5rem;
@@ -295,7 +296,8 @@ header nav ul li button{
   background-image: url(./wepsite.png);
   background-size: cover;
   background-position: center;
-  width: 80%;
+  width: 80vw;
+  height: 60vh;
 
 }
 .spec-photo2{
@@ -303,7 +305,8 @@ header nav ul li button{
   background-image: url(./1.jpg);
   background-size: cover;
   background-position: center;
-  width: 80%;
+  width: 8vw;
+  height: 60vh;
 
 }
 .spec-photo2{
@@ -311,12 +314,14 @@ header nav ul li button{
   background-image: url(./1.jpg);
   background-size: cover;
   background-position: center;
-  width: 80%;
+  width: 80vw;
+  height: 60vh;
 
 }
 .spec-story{
   margin: 3%;
-  width: 30%;
+  width: 80vw;
+  height: 80vh;
 }
 .spec-story h3{
   font-size: 2rem;
@@ -334,7 +339,7 @@ header nav ul li button{
   display: flex;
   justify-content: center;
   margin:  auto;
-  width: 80%;
+  width: 95vw;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./2.jpg') center center;
   background-size: cover;
   align-items: center;
@@ -346,7 +351,7 @@ header nav ul li button{
   flex-direction: column;
   justify-content: space-evenly;
   padding: 20px 0;
-  width: 460px;
+  width: 60vw;
 
 }
 .contact-center h3{
@@ -355,7 +360,7 @@ header nav ul li button{
   color: white;
   font-size: 2rem;
   margin-bottom: 5%;
-  margin-top: 50%;
+  margin-top: 30%;
 }
 .contact-center p{
   padding: 0;
@@ -370,8 +375,8 @@ header nav ul li button{
   color: rgba(0,0,0,0.7);
   font-size: 16px;
   margin-bottom: 16px;
-  width: 460px;
-  height: 40px;
+  width: 60vw;
+  height: 5vh;
   padding: 0 20px;
 }
 form{
@@ -382,7 +387,7 @@ textarea{
   color: rgba(0,0,0,0.7);
   font-size: 16px;
   margin-bottom: 16px;
-  width: 460px;
+  width: 60vw;
 }
 .contact-inner button{
   background-color: rgb(71, 71, 71);
@@ -391,7 +396,7 @@ textarea{
   cursor: pointer;
   height: 40px;
   margin: auto;
-  width: 460px;
+  width: 60vw;
   margin-bottom: 50%;
 }
 /******************************************************************/
