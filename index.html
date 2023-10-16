@@ -24,6 +24,7 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
@@ -68,11 +69,20 @@
     </section>
     <!-----------------------------개인 정보란---------------------------->
     <section class="about1" id="profile"> 
-      <div id="profile" class="about1">
+      <div id="profile" class="about1" data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      data-aos-delay="200">
         <h2>ABOUT</h2>
         <div class="prof">
-          <div class="prifile-img"></div>
-          <div class="profile-inner">
+          <div class="prifile-img" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="600"></div>
+          <div class="profile-inner" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="600">
             <ul>
               <li>
                 <i class="fa-solid fa-mars"></i> <br>
@@ -104,12 +114,21 @@
       </div>
     </section>
     <!----------------------------그래프란------------------------------->
-    <section id="skills">
+    <section id="skills" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"
+    data-aos-delay="600">
       <h2>Main skills</h2>
       <ul>
         <li>
-          <div class="skill-name">Passion</div>
-          <div class="skill-bar">
+          <div class="skill-name"data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="600">Passion</div>
+          <div class="skill-bar"data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="600">
             <div class="skill100">
               <div class="percent">
                 <span class="per">
@@ -121,16 +140,6 @@
         </li>
         <li>
           <div class="skill-name">HTML</div>
-          <div class="skill-bar">
-            <div class="skill80">
-              <div class="percent">
-                <span class="per">
-                80 %
-                </span>
-              </div>
-        </li>
-        <li>
-          <div class="skill-name">CSS</div>
           <div class="skill-bar">
             <div class="skill50">
               <div class="percent">
@@ -288,6 +297,10 @@
     </div>
     </section>
 <!---------------------------------------------------------------------------->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </main>
 </body>
 </html>
