@@ -1,0 +1,9 @@
+.toggle {
+  position: absolute;
+  left: 95%;
+  top: 12%;
+  width: 4%;
+  height: 4%;
+  border: none;
+  z-index: 1;
+}
