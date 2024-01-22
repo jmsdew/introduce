@@ -1,5 +1,5 @@
 import React from 'react';
-import './Introduce.css';
+import './css/Introduce.css';
 
 const Introduce = ({styles}) => {
   const url = 'https://github.com/jmsdew';
@@ -10,7 +10,7 @@ const Introduce = ({styles}) => {
           <div className='myPhoto'>
             <img src={require("./image/photo.jpg")} style={{width:400,height:500}}/>
           </div>
-          <div className='line'></div>
+          <div className='lines'></div>
           <div className='introMent' style={styles}>
             <h2>JUNG MIN SIK</h2>
             <div className='introLine'></div>
@@ -31,7 +31,7 @@ const Introduce = ({styles}) => {
         </div>
         <div className='gitHub'>
           <h3>Github</h3>
-          <p><button className='git' onClick={()=>{window.open(url)}}>https://github.com/jmsdew</button></p>
+          <p><button className='git' onClick={()=>{window.open(url)}} style={styles}>https://github.com/jmsdew</button></p>
         </div>
       </div>
       

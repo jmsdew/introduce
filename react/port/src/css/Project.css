@@ -1,0 +1,128 @@
+.projects {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+
+}
+.aboutMe2{
+  position: relative;
+  left: 10%;
+  top: 10%;
+}
+.firstPro {
+  position: absolute;
+  width: 20%;
+  height: 40%;
+  left: 25%;
+  top: 30%;
+}
+.thirdPro {
+  position: absolute;
+  width: 20%;
+  height: 40%;
+  left:50%;
+  top: 30%;
+}
+.proBtn {
+  cursor: pointer;
+  border: none;
+  width: 85%;
+  height: 70%;
+  left: 3%;
+  top: 5%;
+  position: relative;
+}
+.box1 {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    border: 2px solid black;
+    border-radius: 10%;
+    top: -20%;
+}
+.ment1 {
+  position: relative;
+  top: 5%;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.image1 {
+  width: 85%;
+  }
+
+
+.modal1{
+  border: 1px solid black;
+  position: absolute;
+  width: 60%;
+  height: 90%;
+  z-index: 10;
+  left: 20%;
+  top: -1%;
+  background-color: white;
+}
+.pro-line{
+  width: 30%;
+  border: 0.1rem solid #041988;
+  position: absolute;
+  left: 13%;
+  top: 40%;
+}
+
+.semi1 {
+  position: relative;
+  width: 50%;
+  left: 5%;
+  top: 5%;
+}
+
+.date1{
+  position: relative;
+  left: 60%;
+  top: -30%;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  width: 50%;
+}
+.site{
+  position: relative;
+  left: 60%;
+  top: -30%;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  width: 50%;
+}
+.siteBtn {
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+.intro1{
+  position: relative;
+  top: -28%;
+  left: 5%;
+  line-height: 2rem;
+  width: 80%;
+  height: 50%;
+}
+.line1 {
+  position: relative;
+  top: -3%;
+  left: 7%;
+  border: 1px solid black;
+  width: 30%;
+}
+.skills {
+  position: relative;
+  top: -60%;
+  left: 5%;
+  line-height: 2.2rem;
+}
+.line2 {
+  position: relative;
+  top: 1rem;
+  left: 15%;
+  border: 1px solid black;
+  width: 30%;
+}

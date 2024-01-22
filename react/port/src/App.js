@@ -4,7 +4,11 @@ import Introduce from './Introduce';
 import Footers from './Footers';
 import { FaToggleOn } from "react-icons/fa";
 import { FaToggleOff } from "react-icons/fa";
-import './App.css';
+import About from './About';
+import './css/App.css';
+import Footer2 from './Footer2';
+import Project from './Project';
+import Ask from './Ask';
 const {useState} = React;
 
 function App() {
@@ -27,7 +31,11 @@ function App() {
       <div style={{styles}}>
         <button className='toggle' onClick={darkMode} style={styles}>{set}</button>
         <MainNev styles={styles}/>
-        <Introduce styles={styles}/>
+{/*         <Introduce styles={styles}/> */}
+{/*         <About styles={styles}/> */}
+  {/*       <Project styles={styles}/> */}
+        <Ask/>
+        <Footer2 styles={styles}/>
         <Footers styles={styles}/>
       </div>
     </>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './MainNev.css';
+import './css/MainNev.css';
 const MainNev= ({styles}) =>{
   
   return (
@@ -10,11 +10,11 @@ const MainNev= ({styles}) =>{
         </div>
 
           <ul className='main-ul'>
-            <li><button className='about' style={styles}>About</button></li>
+            <li><button className='nav-about' style={styles}>About</button></li>
             <li>|</li>
-            <li><button className='projects' style={styles}>Projects</button></li>
+            <li><button className='nav-projects' style={styles}>Projects</button></li>
             <li>|</li>
-            <li><button className='contact' style={styles}>Contact</button></li>
+            <li><button className='nav-contact' style={styles}>Contact</button></li>
           </ul>
       </header>
     </>

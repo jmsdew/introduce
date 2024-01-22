@@ -29,6 +29,7 @@
 .main-ul {
   display: flex;
   align-items: center;
+  
 }
 header button {
   background: transparent;
