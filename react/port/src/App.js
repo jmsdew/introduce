@@ -1,14 +1,16 @@
 import React from 'react';
-import MainNev from './MainNev';
-import Introduce from './Introduce';
-import Footers from './Footers';
+import MainNev from './components/MainNev';
+import Introduce from './pages/Introduce';
+import Footers from './components/Footers';
 import { FaToggleOn } from "react-icons/fa";
 import { FaToggleOff } from "react-icons/fa";
-import About from './About';
+import About from './pages/About';
 import './css/App.css';
-import Footer2 from './Footer2';
-import Project from './Project';
-import Ask from './Ask';
+import Project from './pages/Project';
+import Contact from './pages/Contact';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Layout from './layouts/Layout';
+import Project2 from './pages/Project2';
 const {useState} = React;
 
 function App() {
@@ -28,16 +30,18 @@ function App() {
  
   return (
     <> 
-      <div style={{styles}}>
-        <button className='toggle' onClick={darkMode} style={styles}>{set}</button>
-        <MainNev styles={styles}/>
-{/*         <Introduce styles={styles}/> */}
-{/*         <About styles={styles}/> */}
-  {/*       <Project styles={styles}/> */}
-        <Ask/>
-        <Footer2 styles={styles}/>
-        <Footers styles={styles}/>
-      </div>
+
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Layout/>}>
+              <Route index element={<Introduce/>}/>
+              <Route path='About' element={<About/>}/>
+              <Route path='Project' element={<Project/>}/>
+                <Route path='Project2' element={<Project2/>}/>
+              <Route path='Contact' element={<Contact/>}/>
+            </Route>
+          </Routes>
+        </BrowserRouter>
     </>
   );
 }
@@ -45,10 +49,3 @@ function App() {
 export default App;
 
 
-
-
-// 메인 네비바
-// 자기 소개, 네비 버튼, 사진
-// footer
-
-// 완료 후 네비 3가지 페이지 기능

@@ -24,19 +24,17 @@
   font-weight:bold;
   border:none;
   cursor:pointer;
+  text-decoration : none;
+  color: black;
 }
+
 
 .main-ul {
   display: flex;
   align-items: center;
   
 }
-header button {
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  font-size: 1.2rem;
-}
+
 li {
   padding : 15px;
   list-style-type: none;

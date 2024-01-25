@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './css/Footers.css';
+import '../css/Footers.css';
 const Footer2 = ({styles}) => {
 
   const url = 'https://github.com/jmsdew';

@@ -1,34 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
-import './css/Project.css';
+import '../css/Project.css';
+import Footer2 from './Footer2';
+import { SliderContainer } from '../slider/SliderContainer';
 
 
 const Project = ({styles}) => {
   const url = "https://www.shbell.shop";
   const url2 = "https://github.com/jmsdew/kimbaekjung";
 
-    const [isOn, setIsOn] = useState(false);
-
-    const refs = useRef();
-
-    useEffect(()=>{
-      if(isOn===true){
-        refs.current.style.display='block';
-      }else{
-        refs.current.style.display='none';
-      }
-      const handler = (e)=>{
-        if(refs.current && !refs.current.contains(e.target)){
-          setIsOn(false);
-        }
-      }
-
-      document.addEventListener('mousedown', handler);
-
-    })
-
-    const modalOpen = () => {
-      setIsOn(!isOn);
-    }
+  
 
 
   return (
@@ -39,35 +19,27 @@ const Project = ({styles}) => {
           <div className='pro-line'></div>
         </div>
 
-        <div className="firstPro"  style={styles}>
-          <div className="box1" ><button className='proBtn' style={styles} onClick={modalOpen}>
-            <img className='image1' src={require("./image/cha.png")}/></button></div>
-          <div className="ment1" >
-            <h4>학교 종이 땡땡땡</h4>
-            <p>초등학교 선생님 들을 위한 학생 관리 사이트</p>
-            <p> #java #spring #SSL #DNS #MySQL </p>
-          </div>
-        </div>
 
-        <div className="thirdPro" style={styles}>
-          <div className="box1"></div>
-          <div className="ment1">
-            <h4>파이널 프로젝트</h4>
-            <p>파이널 프로젝트를 위한 자리입니다.</p>
-            <p> #final </p>
-          </div>
-        </div>
+            <button className='pro' style={{color:"#041988", fontWeight:'bold'}}>학교 종이 땡땡땡</button>
+{/*             <p>초등학교 선생님 들을 위한 학생 관리 사이트</p>
+            <p> #java #spring #SSL #DNS #MySQL </p> */}
+            <br/>
+            <button className='pro'>파이널 프로젝트</button>
+{/*             <p>파이널 프로젝트를 위한 자리입니다.</p>
+            <p> #final </p> */}
 
-        <div className='modal1' ref={refs} style={styles}>
-          <h1>학교 종이 땡땡땡</h1>
-          <img className='semi1' src={require("./image/semi.png")}/>
+
+
+        <div className='modal1' >
+          {/* <img className='semi1' src={require("../image/semi.png")}/> */}
+          <div className='slider'><SliderContainer/></div> 
 
           <div className='date1'>
-          <p># java # spring # MySQL # html # css # javascript </p> 
             <h4>개발 인원</h4>
             <p>3명</p>
             <h4>개발 기간</h4>
             <p>2023.12.18 ~ 2024.01.08</p>
+            <p># java # spring # MySQL # html # css # javascript </p> 
           </div>
 
           <div className='site'>
@@ -85,8 +57,8 @@ const Project = ({styles}) => {
             <h2>소개</h2>
             <div className='line1'></div>
             <p>초등학교 선생님인 지인의 요청을 만든 초등학교 학생 관리 사이트 입니다.</p>
-            <p>학생 착석 체크, 10분 타이머, 칭찬하기 기능, 지각, 결석 체크, 칭찬에 따른 랭킹 페이지 조회 등이 가능합니다.</p>
-            <p>실제 배포되어 지인과 지인의 동료 분들이 사용하고 있습니다.</p>
+            <p>학생 착석 체크, 10분 타이머, 칭찬하기 기능,<br/> 지각, 결석 체크, 칭찬에 따른 랭킹 페이지 조회 등이 가능합니다.</p>
+            <p><strong>실제 배포되어 지인과 지인의 동료 분들이 사용하고 있습니다.</strong></p>
           </div>
 
           <div className='skills'>
@@ -102,6 +74,7 @@ const Project = ({styles}) => {
          
         </div>
         </div>
+        <Footer2/>
     </>
   )
 }
