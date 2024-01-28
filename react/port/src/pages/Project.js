@@ -2,13 +2,13 @@ import { useEffect, useRef, useState } from 'react';
 import '../css/Project.css';
 import Footer2 from './Footer2';
 import { SliderContainer } from '../slider/SliderContainer';
+import { NavLink } from 'react-router-dom';
 
 
 const Project = ({styles}) => {
   const url = "https://www.shbell.shop";
   const url2 = "https://github.com/jmsdew/kimbaekjung";
 
-  
 
 
   return (
@@ -16,30 +16,25 @@ const Project = ({styles}) => {
       <div className='projects' style={styles}>
         <div className='aboutMe2'  style={styles}>
           <h3>PROJECT</h3>
-          <div className='pro-line'></div>
         </div>
+        <div className='pro-line'></div>
 
 
-            <button className='pro' style={{color:"#041988", fontWeight:'bold'}}>학교 종이 땡땡땡</button>
-{/*             <p>초등학교 선생님 들을 위한 학생 관리 사이트</p>
-            <p> #java #spring #SSL #DNS #MySQL </p> */}
+        <NavLink to={"/Project"} className='pro' style={{textDecoration:'underline'}}>학교 종이 땡땡땡</NavLink>
             <br/>
-            <button className='pro'>파이널 프로젝트</button>
-{/*             <p>파이널 프로젝트를 위한 자리입니다.</p>
-            <p> #final </p> */}
+            <NavLink to={"/Project2"} className='pro'>파이널 프로젝트</NavLink>
 
 
 
         <div className='modal1' >
-          {/* <img className='semi1' src={require("../image/semi.png")}/> */}
           <div className='slider'><SliderContainer/></div> 
 
           <div className='date1'>
+          <p><strong># java # spring # MySQL # html # css # javascript </strong></p> 
             <h4>개발 인원</h4>
             <p>3명</p>
             <h4>개발 기간</h4>
             <p>2023.12.18 ~ 2024.01.08</p>
-            <p># java # spring # MySQL # html # css # javascript </p> 
           </div>
 
           <div className='site'>
@@ -64,11 +59,12 @@ const Project = ({styles}) => {
           <div className='skills'>
             <div className='line2'></div>
             <h2>담당한 파트</h2>
-              <p> - DNS를 이용한 사이트 이름 지정</p>
-              <p> - 웹사이트 보안을 위해 SSL 인증을 통한 HTTPS 사이트 구축</p>
-              <p> - KAKAO LOGIN API 를 이용한 편리한 가입과 로그인 구현</p>
+              <p> - 접근성 향상을 위해 DNS를 이용한 사이트 이름 지정</p>
+              <p> - 웹사이트 보안을 위해 SSL 인증을 통한 HTTPS 사이트 구축(암호화)</p>
+              <p> - KAKAO LOGIN API 를 이용한 신뢰있고, 편리한 가입과 로그인 구현</p>
               <p> - 메인화면, 랭킹화면, 캘린더 프론트엔드 구현과 spring boot 서버 구축</p>
               <p> - 메인화면에 필요한 기능들을 각각의 스토리지에 귀속시켜 서버의 부하를 낮춤</p>
+              <p>   (로컬 스토리지, 세션 스토리지)</p>
           </div>
 
          

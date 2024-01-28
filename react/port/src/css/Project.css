@@ -6,36 +6,11 @@
 }
 .aboutMe2{
   position: relative;
-  left: 10%;
+  left: 5%;
   top: 5%;
   width: 70%;
 }
-.firstPro {
-  position: absolute;
-  width: 22%;
-  height: 40%;
-  left: 25%;
-  top: 30%;
-}
-.proBtn:hover{
-  background-color: rgb(92, 92, 92);
-}
-.thirdPro {
-  position: absolute;
-  width: 22%;
-  height: 40%;
-  left:55%;
-  top: 30%;
-}
-.proBtn {
-  cursor: pointer;
-  border: none;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background-color: white;
-  border-radius: 10%;
-}
+
 .box1 {
     position: relative;
     width: 80%;
@@ -67,11 +42,12 @@
   background-color: white;
 }
 .pro-line{
-  width: 30%;
+  height: 60%;
   border: 0.1rem solid #041988;
   position: absolute;
-  left: 13%;
-  top: 40%;
+  left: 17%;
+  top: 15%;
+
 }
 
 .semi1 {
@@ -83,15 +59,16 @@
 
 .date1{
   position: relative;
-  top: 80%;
+  top: -40%;
+  left: 70%;
   font-size: 1.2rem;
   line-height: 2rem;
   width: 50%;
 }
 .site{
   position: relative;
-  left: 30%;
-  top: 38%;
+  left: 70%;
+  top: -38%;
   font-size: 1.2rem;
   line-height: 2rem;
   width: 50%;
@@ -105,8 +82,8 @@
 }
 .intro1{
   position: relative;
-  top: -100%;
-  left: 70%;
+  top: 0%;
+  left: 0%;
   line-height: 2rem;
   width: 55%;
   height: 50%;
@@ -120,8 +97,8 @@
 }
 .skills {
   position: relative;
-  top: -80%;
-  left: 70%;
+  top: -60%;
+  left: 60%;
   line-height: 2.2rem;
   width: 60%;
 }
@@ -138,6 +115,7 @@
   height: 45%;
   position: relative;
   left: 2%;
+  top: -5%;
 }
 .swiper swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden mySwiper {
   width: 100%;
@@ -150,14 +128,12 @@
 
 .pro {
   position: relative;
-  top: 20%;
+  top: 30%;
   font-size: 1.5rem;
-  background-color: white;
-  border: none;
   height: 5%;
   left: 5%;
   font-weight: bold;
-}
-.pro:hover {
-  text-decoration:underline;
+  text-decoration: none;
+  color: black;
+  line-height: 150%;
 }

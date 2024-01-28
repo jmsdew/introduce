@@ -20,11 +20,11 @@ const MainNev= () =>{
         </div>
 
           <ul className='main-ul'>
-            <li><NavLink  to={"/About"} className='nav-about' style={styles}>About</NavLink></li>
+            <li><NavLink  to={"/About"} className='nav' style={styles}>About</NavLink></li>
             <li>|</li>
-            <li><NavLink  to={"/Project"} className='nav-projects' style={styles}>Projects</NavLink></li>
+            <li><NavLink  to={"/Project"} className='nav' style={styles}>Projects</NavLink></li>
             <li>|</li>
-            <li><NavLink  to={"/Contact"} className='nav-contact' style={styles}>Contact</NavLink></li>
+            <li><NavLink  to={"/Contact"} className='nav' style={styles}>Contact</NavLink></li>
           </ul>
       </header>
     </>

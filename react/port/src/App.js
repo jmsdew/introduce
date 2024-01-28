@@ -14,30 +14,18 @@ import Project2 from './pages/Project2';
 const {useState} = React;
 
 function App() {
-  const [isOn, setIsOn] = useState(true);
-  const [color, setColor] = useState('black');
 
-  const styles = {
-    backgroundColor:isOn? 'white':'#29292a',
-    color:isOn? 'black':'white'
-  }
-
-  const darkMode = ()=>{
-    setIsOn(!isOn);
-    
-  }
-  const set = isOn? <FaToggleOn size="50" /> : <FaToggleOff size="50"/>
+  
  
   return (
     <> 
-
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Layout/>}>
               <Route index element={<Introduce/>}/>
               <Route path='About' element={<About/>}/>
               <Route path='Project' element={<Project/>}/>
-                <Route path='Project2' element={<Project2/>}/>
+              <Route path='Project2' element={<Project2/>}/>
               <Route path='Contact' element={<Contact/>}/>
             </Route>
           </Routes>

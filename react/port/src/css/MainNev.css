@@ -39,5 +39,7 @@ li {
   padding : 15px;
   list-style-type: none;
 }
-
+li:hover{
+  text-decoration: underline;
+}
 
